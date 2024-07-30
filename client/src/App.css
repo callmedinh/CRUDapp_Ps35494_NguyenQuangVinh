@@ -1,0 +1,105 @@
+/* General Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* Header Styles */
+.Header {
+  background-color: #3498db;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.Header h1 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.Header p {
+  font-size: 1.2em;
+}
+
+/* Navigation Styles */
+.menu {
+  background-color: #2c3e50;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.menu ul {
+  list-style: none;
+}
+
+.menu ul li {
+  display: inline-block;
+  margin-right: 20px;
+  cursor: pointer;
+  position: relative;
+}
+
+.menu ul li:last-child {
+  margin-right: 0;
+}
+
+.menu ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 15px;
+  transition: background-color 0.3s ease;
+  display: block;
+  line-height: 35px;
+}
+
+.menu ul li li a {
+  font-size: 80%;
+}
+
+.menu ul li a:hover {
+  background-color: #2980b9;
+  border-radius: 5px;
+}
+
+/* Submenu Styles */
+/* Submenu Styles */
+.submenu {
+  display: none;
+  position: absolute;
+  top: 100%; /* Position the submenu below the parent menu item */
+  left: 0; /* Align the submenu with the left edge of the parent menu item */
+  background-color: #2c3e50;
+  padding: 10px 0; /* Add padding to submenu */
+  min-width: 150px; /* Set a minimum width for the submenu */
+  z-index: 1;
+  border-radius: 5px; /* Add border radius for a rounded appearance */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+}
+
+.menu ul li:hover .submenu {
+  display: block;
+}
+
+
+.submenu ul li {
+  margin: 0; /* Remove default margin */
+}
+
+.submenu ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px; /* Add padding to submenu items */
+  display: block;
+  transition: background-color 0.3s ease;
+  text-align: left;
+}
+
+.submenu ul li a:hover {
+  background-color: #1a6079; /* Darken the background color on hover */
+}

@@ -1,0 +1,108 @@
+Get http://localhost:3001/user
+
+
+### thêm
+POST http://localhost:3001/user
+Content-Type: application/json
+
+{
+    "fullname": "lê hữu luân ",
+    "email": "luanhuupuan@gmail.com",
+    "password": "12345",
+    "phone": "0396974912",
+    "address": "Đồng nai"
+}
+### login
+POST http://localhost:3001/user/login
+Content-Type: application/json
+
+{
+    "email": "luanhuupuan@gmail.com",
+    "password": "12345"
+}
+
+
+
+### tìm
+GET  http://localhost:3001/user/65f03e8ba16b0acf3952fffc
+Content-Type: application/json
+
+### update
+GET  http://localhost:3001/user/65f243f1aad9d0dac88f1de6
+Content-Type: application/json
+
+{
+ "fullname": "Nguyễn Ngọc Quế Đan ",
+    "email": "luanhuupuan@gmail.com",
+    "password": "12345",
+    "phone": "0396974912",
+    "address": "Đồng nai"
+}
+
+### delete
+DELETE  http://localhost:3001/user/65f243f1aad9d0dac88f1de6
+Content-Type: application/json
+
+
+### load fruit
+Get http://localhost:3001/fruit
+
+### theem fruit
+POST http://localhost:3001/fruit
+Content-Type: application/json
+
+{
+    "name":"trai tao tau",
+     "quantity": 1,
+     "price": 20000,
+    "status": 1,
+    "id_distributor":"65f25ce432ed75821880936b"
+
+}
+
+### tìm 1 fruit
+GET  http://localhost:3001/fruit/65f2b93dfe975cee55e19ae8
+Content-Type: application/json
+
+### update một fruit
+GET  http://localhost:3001/fruit/65f2b93dfe975cee55e19ae8
+Content-Type: application/json
+
+{
+    "name":"nho my den",
+     "quantity": 4,
+     "price": 4444444,
+    "status": 5,
+    "id_distributor":"65f25ce432ed75821880936b"
+}
+
+### delete fruit
+DELETE  http://localhost:3001/fruit/65f2b93dfe975cee55e19ae8
+Content-Type: application/json
+
+
+### load dis
+Get http://localhost:3001/distributor
+
+
+### them distributor
+POST http://localhost:3001/distributor
+Content-Type: application/json
+
+{
+   "name":"Cong ti mot thanh vien"
+}
+
+
+### delete dis
+DELETE  http://localhost:3001/distributor/65f25ce432ed75821880936b
+Content-Type: application/json
+
+### update một dis
+GET  http://localhost:3001/distributor/65f4f5d021d8e1e3b4fe34c8
+Content-Type: application/json
+
+{
+      "name":"Cong ti mot thanh vien soos ba"
+
+}
